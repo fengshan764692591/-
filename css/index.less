@@ -106,3 +106,101 @@ ul{
     }
   }
 }
+
+// 特卖汇 
+.hot_sell{
+  background-color: #fff;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  // 标题
+  .hs_tiltle{
+    display: flex;
+    justify-content: space-between;
+    span{
+      color: red;
+      font-style: italic;
+      font-size: 15px;
+    }
+    a{ 
+      background: #ff81c7;
+      color: #fff;
+      font-size: 12px;
+      padding: 2px 5px;
+      border-radius: 15px;
+      
+    }
+  }
+}
+// 内容
+.hs_content{
+  display: flex;
+  // 左侧
+  .goods_left{
+    flex:1;
+    padding: 5px;
+    >img{ }
+    .goods_name{
+      color: #000;
+      font-size: 13px;
+      overflow: hidden;
+      height: 34px;
+    }
+    .goods_price{
+      .news_price{
+        font-size: 16px;
+        color: red;
+      }
+      .before_price{
+        background: red;
+        color: #fff;
+        border-radius: 10px;
+        padding: 2px;
+        font-size: 13px;
+      }
+    }
+  }
+  .goods_info{
+     flex:1;
+     background-color: #ccc;
+    .big_goods{
+      display: block;
+      height: 50%;
+    border-bottom:5px solid #000;
+    padding: 15px;
+    position: relative; 
+      .bg_title1{
+        color: red;
+      }
+      .bg_title2{
+        color: #000;
+      }
+      img{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 107px/2;
+      }
+    }
+    .samll_goods{
+      height: 50%;
+      display: flex;
+      a{
+        flex: 1px;
+        border-left: 5px solid #000;
+        display: flex;
+        flex-direction: column;
+        font-size: 13px;
+        justify-content: center;
+        align-items: center;
+        .sm_title1{
+          color: #0094ff;
+        }
+        .sm_title2{}
+        img{
+          width: 50px;
+        }
+      }
+    }
+  }
+}

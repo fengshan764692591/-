@@ -86,3 +86,91 @@ ul {
   background-size: 104px 327.5px;
   background-position: 0 -240px;
 }
+.hot_sell {
+  background-color: #fff;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+.hot_sell .hs_tiltle {
+  display: flex;
+  justify-content: space-between;
+}
+.hot_sell .hs_tiltle span {
+  color: red;
+  font-style: italic;
+  font-size: 15px;
+}
+.hot_sell .hs_tiltle a {
+  background: #ff81c7;
+  color: #fff;
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 15px;
+}
+.hs_content {
+  display: flex;
+}
+.hs_content .goods_left {
+  flex: 1;
+  padding: 5px;
+}
+.hs_content .goods_left .goods_name {
+  color: #000;
+  font-size: 13px;
+  overflow: hidden;
+  height: 34px;
+}
+.hs_content .goods_left .goods_price .news_price {
+  font-size: 16px;
+  color: red;
+}
+.hs_content .goods_left .goods_price .before_price {
+  background: red;
+  color: #fff;
+  border-radius: 10px;
+  padding: 2px;
+  font-size: 13px;
+}
+.hs_content .goods_info {
+  flex: 1;
+  background-color: #ccc;
+}
+.hs_content .goods_info .big_goods {
+  display: block;
+  height: 50%;
+  border-bottom: 5px solid #000;
+  padding: 15px;
+  position: relative;
+}
+.hs_content .goods_info .big_goods .bg_title1 {
+  color: red;
+}
+.hs_content .goods_info .big_goods .bg_title2 {
+  color: #000;
+}
+.hs_content .goods_info .big_goods img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 53.5px;
+}
+.hs_content .goods_info .samll_goods {
+  height: 50%;
+  display: flex;
+}
+.hs_content .goods_info .samll_goods a {
+  flex: 1px;
+  border-left: 5px solid #000;
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  justify-content: center;
+  align-items: center;
+}
+.hs_content .goods_info .samll_goods a .sm_title1 {
+  color: #0094ff;
+}
+.hs_content .goods_info .samll_goods a img {
+  width: 50px;
+}
