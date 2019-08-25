@@ -1,0 +1,108 @@
+
+body{
+  background-color: #666;
+
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img{
+  // 去掉3px 间隙
+  display: block;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+// 清浮动
+.clearfix::after{
+  content: "";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  line-height: 0;
+  clear: both;
+} 
+.main{
+  max-width: 540px;
+  margin: 10px auto;
+}
+// 菜单
+// 公共样式
+.menu{
+  .menu_item{
+    margin-bottom: 6px;
+    display: flex;
+    height: 90px;
+    border-radius: 10px;
+    
+    .item_left{
+      flex: 1;
+      display: flex;
+      color: #fff;
+      // 修改主轴方向
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+      i{
+        display: block;
+        width: 43px;
+        height: 43px;        
+      }
+    }
+    .item_right{
+      flex:2;
+      display: flex;
+      flex-wrap: wrap;
+      a{
+        width:50%;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-left: 1px solid #fff;
+      }
+      a:nth-child(-n+2){
+        border-bottom: 1px solid #fff;
+      }
+    }
+  }
+}
+// 酒店
+.hotel{
+  background: #fa7f50;
+  .item_left{
+    i{
+      background-image: url("../images/xc_sprites.png");
+      background-size: 208px/2 655px/2;
+      background-position: 0 -260px/2;
+    }
+  }
+}
+// 机票
+.ticket{
+  background-color: #3d98ff;
+  .item_left{
+    i{
+      background-image: url("../images/xc_sprites.png");
+      background-size: 208px/2 655px/2;
+      background-position: 0 -360px/2;
+    }
+  }
+}
+// 旅游
+.travel{
+  background-color: #44c522;
+  .item_left{
+    i{
+      background-image: url("../images/xc_sprites.png");
+      background-size: 208px/2 655px/2;
+      background-position: 0 -480px/2;
+    }
+  }
+}

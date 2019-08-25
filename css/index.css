@@ -1,0 +1,88 @@
+body {
+  background-color: #666;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  line-height: 0;
+  clear: both;
+}
+.main {
+  max-width: 540px;
+  margin: 10px auto;
+}
+.menu .menu_item {
+  margin-bottom: 6px;
+  display: flex;
+  height: 90px;
+  border-radius: 10px;
+}
+.menu .menu_item .item_left {
+  flex: 1;
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu .menu_item .item_left i {
+  display: block;
+  width: 43px;
+  height: 43px;
+}
+.menu .menu_item .item_right {
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu .menu_item .item_right a {
+  width: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #fff;
+}
+.menu .menu_item .item_right a:nth-child(-n+2) {
+  border-bottom: 1px solid #fff;
+}
+.hotel {
+  background: #fa7f50;
+}
+.hotel .item_left i {
+  background-image: url("../images/xc_sprites.png");
+  background-size: 104px 327.5px;
+  background-position: 0 -130px;
+}
+.ticket {
+  background-color: #3d98ff;
+}
+.ticket .item_left i {
+  background-image: url("../images/xc_sprites.png");
+  background-size: 104px 327.5px;
+  background-position: 0 -180px;
+}
+.travel {
+  background-color: #44c522;
+}
+.travel .item_left i {
+  background-image: url("../images/xc_sprites.png");
+  background-size: 104px 327.5px;
+  background-position: 0 -240px;
+}
